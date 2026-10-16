@@ -1,0 +1,7 @@
+Alex Student
+Final-year Computer Science Engineering student
+Skills: Python, SQL, Git, HTML, CSS
+Built a Flask REST API for a student library with SQLite and unit tests.
+Analyzed a public sales CSV using pandas and SQL queries.
+Created Matplotlib charts to explain monthly sales trends.
+Collaborated with three classmates using Git branches and pull requests.

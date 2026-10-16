@@ -1,0 +1,584 @@
+{
+  "covered": [],
+  "partial": [
+    {
+      "text": "Extensive Python application development and data processing experience",
+      "canonical_key": "python",
+      "importance": "required",
+      "source_quote": "Required: Extensive Python application development and data processing experience.",
+      "id": "0:0",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.5903727999370874,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "The top line does not support the requirement for extensive Python application development and data processing experience.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.5903727999370874
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.3554538437349011
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.33988007927094294
+        }
+      ]
+    },
+    {
+      "text": "Familiarity with Django or Flask",
+      "canonical_key": "django",
+      "importance": "required",
+      "source_quote": "Required: Familiarity with Django or Flask.",
+      "id": "0:1",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.49457493480325787,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.49457493480325787
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.460790910788204
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.2264219728902504
+        }
+      ]
+    },
+    {
+      "text": "Advanced PostgreSQL query optimization, joins, stored procedures, and tuning",
+      "canonical_key": "postgresql",
+      "importance": "required",
+      "source_quote": "Required: Advanced PostgreSQL query optimization, joins, stored procedures, and tuning.",
+      "id": "0:2",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.3133466439414516,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.3133466439414516
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.18346448570662074
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.14900553125036445
+        }
+      ]
+    },
+    {
+      "text": "Practical Linux and Bash experience",
+      "canonical_key": "linux",
+      "importance": "required",
+      "source_quote": "Required: Practical Linux and Bash experience.",
+      "id": "0:3",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.35574347566757514,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.35574347566757514
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.25377697665847043
+        },
+        {
+          "line": "Collaborated with three classmates using Git branches and pull requests.",
+          "score": 0.20353756582953383
+        }
+      ]
+    },
+    {
+      "text": "Seven years of full-time professional backend engineering experience",
+      "canonical_key": "backend",
+      "importance": "required",
+      "source_quote": "Required: Seven years of full-time professional backend engineering experience.",
+      "id": "0:6",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.46474493439294623,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Final-year Computer Science Engineering student",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.46474493439294623
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.3791591079296511
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.16119051053945038
+        }
+      ]
+    },
+    {
+      "text": "Computer science degree or equivalent software engineering training",
+      "canonical_key": "degree",
+      "importance": "required",
+      "source_quote": "Required: Computer science degree or equivalent software engineering training.",
+      "id": "0:7",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.6608613764919993,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Final-year Computer Science Engineering student",
+      "explanation": "The top line does not explicitly state a Computer Science degree or equivalent software engineering training.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.6608613764919993
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.4249389963985532
+        },
+        {
+          "line": "Alex Student",
+          "score": 0.21120312476294525
+        }
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "text": "Docker container experience",
+      "canonical_key": "docker",
+      "importance": "required",
+      "source_quote": "Required: Docker container experience.",
+      "id": "0:4",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.1442820831902236,
+      "invalid_covered_citation": false,
+      "category": "missing",
+      "citation": null,
+      "explanation": "No resume line met the lower similarity threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.1442820831902236
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.10095701186199901
+        },
+        {
+          "line": "Collaborated with three classmates using Git branches and pull requests.",
+          "score": 0.09555422085673267
+        }
+      ]
+    },
+    {
+      "text": "Experience with AWS EC2, RDS, and CloudFront",
+      "canonical_key": "aws",
+      "importance": "required",
+      "source_quote": "Required: Experience with AWS EC2, RDS, and CloudFront.",
+      "id": "0:5",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.16519411820554397,
+      "invalid_covered_citation": false,
+      "category": "missing",
+      "citation": null,
+      "explanation": "No resume line met the lower similarity threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.16519411820554397
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.16350529347378412
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.10066476386462705
+        }
+      ]
+    },
+    {
+      "text": "Explain complex ideas to nontechnical colleagues",
+      "canonical_key": "communication",
+      "importance": "required",
+      "source_quote": "Required: Explain complex ideas to nontechnical colleagues.",
+      "id": "0:8",
+      "job_id": 5,
+      "job_index": 0,
+      "score": 0.2817311237380665,
+      "invalid_covered_citation": false,
+      "category": "missing",
+      "citation": null,
+      "explanation": "No resume line met the lower similarity threshold.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.2817311237380665
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.2667470185736865
+        },
+        {
+          "line": "Collaborated with three classmates using Git branches and pull requests.",
+          "score": 0.2665959451854551
+        }
+      ]
+    }
+  ],
+  "ranked_gaps": [
+    {
+      "canonical_key": "aws",
+      "text": "Experience with AWS EC2, RDS, and CloudFront",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:5"
+      ],
+      "categories": [
+        "missing"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "backend",
+      "text": "Seven years of full-time professional backend engineering experience",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:6"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "communication",
+      "text": "Explain complex ideas to nontechnical colleagues",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:8"
+      ],
+      "categories": [
+        "missing"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "degree",
+      "text": "Computer science degree or equivalent software engineering training",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:7"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "django",
+      "text": "Familiarity with Django or Flask",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:1"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "docker",
+      "text": "Docker container experience",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:4"
+      ],
+      "categories": [
+        "missing"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "linux",
+      "text": "Practical Linux and Bash experience",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:3"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "postgresql",
+      "text": "Advanced PostgreSQL query optimization, joins, stored procedures, and tuning",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:2"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "python",
+      "text": "Extensive Python application development and data processing experience",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:0"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    }
+  ],
+  "recommendations": [
+    {
+      "kind": "project",
+      "title": "AWS EC2, RDS, and CloudFront Migration Study",
+      "what_to_do": "Assess the current state of AWS EC2, RDS, and CloudFront configurations, identify inefficiencies, and propose a migration plan to improve performance and cost-effectiveness.",
+      "why_it_helps": "This project will help the student gain practical experience in AWS management, improve their understanding of cloud infrastructure, and prepare them for future projects involving AWS.",
+      "estimated_hours": 12,
+      "resource_type": "official tutorial",
+      "resume_example": "Migrated AWS EC2, RDS, and CloudFront configurations to a more efficient and cost-effective solution, resulting in a 20% reduction in costs and a 15% increase in performance.",
+      "gap_key": "aws",
+      "requirement_ids": [
+        "0:5"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Implement a RESTful API with JWT Authentication",
+      "what_to_do": "Create a simple RESTful API using Flask, implementing JWT authentication for secure access control.",
+      "why_it_helps": "This project will help the student gain practical experience in backend development, specifically in implementing RESTful APIs and securing them with JWT. This task builds related evidence but cannot satisfy professional tenure, degree, citizenship, or clearance requirements.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "Implemented a RESTful API with JWT authentication using Flask. Successfully secured access control with JWT, enhancing the security of the backend application.",
+      "gap_key": "backend",
+      "requirement_ids": [
+        "0:6"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Develop a Technical Communication Workshop",
+      "what_to_do": "Create a workshop outline, develop slides, and prepare materials for a 2-hour workshop on explaining complex ideas to non-technical colleagues.",
+      "why_it_helps": "This project will enhance the student's ability to communicate technical concepts effectively, which is crucial for their future career in software engineering.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "Developed a workshop on technical communication for software engineers, enhancing their ability to explain complex ideas to non-technical colleagues.",
+      "gap_key": "communication",
+      "requirement_ids": [
+        "0:8"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Building a Simple Web Application for Resume and Job Search",
+      "what_to_do": "Create a simple web application using HTML, CSS, and JavaScript that allows users to upload their resume and job applications. The application should include basic features like uploading documents, searching for jobs, and submitting applications.",
+      "why_it_helps": "This project will help the student gain practical experience in web development, learn how to structure and style HTML/CSS, and understand the basics of JavaScript. It also aligns with the requirement for a degree in Computer Science or equivalent software engineering training. This task builds related evidence but cannot satisfy professional tenure, degree, citizenship, or clearance requirements.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "A sample resume for a CSE student with relevant skills and experience.",
+      "gap_key": "degree",
+      "requirement_ids": [
+        "0:7"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Django Web Application Development",
+      "what_to_do": "Create a simple Django web application that includes user authentication, a registration system, and a basic blog feature.",
+      "why_it_helps": "This project will help you understand the Django framework, learn about user authentication, and create a basic web application. It is doable in 2-24 hours and provides a measurable deliverable.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "Django Web Application Development",
+      "gap_key": "django",
+      "requirement_ids": [
+        "0:1"
+      ],
+      "used_fallback": false
+    }
+  ],
+  "warnings": [],
+  "incomplete": false,
+  "job_count": 1,
+  "retry_counters": {},
+  "resume_entries": [
+    {
+      "kind": "skill",
+      "name": "Python",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "skill",
+      "name": "SQL",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "Git",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "HTML",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "CSS",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Created Matplotlib charts to explain monthly sales trends.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Collaborated with three classmates using Git branches and pull requests.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    }
+  ],
+  "settings": {
+    "llm_provider": "ollama",
+    "ollama_base_url": "http://localhost:11434",
+    "ollama_model": "qwen2.5:1.5b",
+    "ollama_num_gpu": 0,
+    "ollama_keep_alive": "0",
+    "api_base_url": "https://api.openai.com/v1",
+    "api_model": "",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_local_files_only": false,
+    "high_similarity": 0.5,
+    "low_similarity": 0.3,
+    "max_retries": 2,
+    "top_n_gaps": 5,
+    "match_top_k": 3,
+    "retry_top_k_increment": 3,
+    "structured_output_retries": 1,
+    "llm_timeout_seconds": 120,
+    "ollama_context_tokens": 8192,
+    "embedding_timeout_seconds": 240,
+    "max_resume_bytes": 5000000,
+    "max_resume_characters": 30000,
+    "max_job_characters": 20000,
+    "max_jobs": 10,
+    "parser_version": "1",
+    "prompt_version": "3",
+    "db_path": "data/skillgap.sqlite3"
+  }
+}

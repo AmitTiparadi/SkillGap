@@ -1,0 +1,13 @@
+Backend Software Engineer, Enveritas - condensed evaluation requirements
+Source: https://job-boards.greenhouse.io/enveritas/jobs/4006514008
+Reviewed: 2026-10-11. These are paraphrased requirements, not the full posting.
+
+Required: Extensive Python application development and data processing experience.
+Required: Familiarity with Django or Flask.
+Required: Advanced PostgreSQL query optimization, joins, stored procedures, and tuning.
+Required: Practical Linux and Bash experience.
+Required: Docker container experience.
+Required: Experience with AWS EC2, RDS, and CloudFront.
+Required: Seven years of full-time professional backend engineering experience.
+Required: Computer science degree or equivalent software engineering training.
+Required: Explain complex ideas to nontechnical colleagues.

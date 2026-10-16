@@ -1,0 +1,86 @@
+{
+  "Build REST APIs with Python and Flask": [
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.5433724022174624
+    },
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": 0.12662383707581842
+    },
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.12356646372859638
+    }
+  ],
+  "Analyze data with pandas": [
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.5179641100573922
+    },
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": 0.3551891078568379
+    },
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.15656580213696278
+    }
+  ],
+  "Write SQL queries": [
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.33973112926028165
+    },
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.2439308134076567
+    },
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": 0.07749692649524971
+    }
+  ],
+  "Advanced PostgreSQL performance tuning": [
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.2521076600137775
+    },
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.12288220225294612
+    },
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": 0.04618020592440233
+    }
+  ],
+  "Docker container experience": [
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.10095701186199901
+    },
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.009671460392216797
+    },
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": -0.027548399013286828
+    }
+  ],
+  "Build Power BI dashboards": [
+    {
+      "line": "Created Matplotlib charts to explain monthly sales trends.",
+      "score": 0.14217449837326177
+    },
+    {
+      "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "score": 0.09000680401593425
+    },
+    {
+      "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "score": 0.07638893212436793
+    }
+  ]
+}

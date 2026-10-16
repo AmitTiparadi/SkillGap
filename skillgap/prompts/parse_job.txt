@@ -1,0 +1,10 @@
+Extract a JSON list of actionable requirements from this job description.
+Separate compound requirements into atomic skills or experience requirements;
+keep qualifiers such as years and production experience. Preserve the job's
+required/preferred distinction; use required if no preference is stated.
+Each entry has text, canonical_key, importance, and source_quote.
+source_quote must be copied exactly from the job. canonical_key is a short
+lowercase skill label; use the supplied known keys when equivalent. Do not merge
+different tools (PostgreSQL vs SQLite), proficiency levels, or experience years.
+Include every explicitly stated requirement; do not add inferred ones.
+Return JSON only in {"items": [...]}.

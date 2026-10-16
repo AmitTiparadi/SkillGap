@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+data/
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Coursework report and its working files stay on this machine.
+reports/
+*.docx
+
+# Generated packaging metadata and obsolete UI configuration.
+*.egg-info/
+.streamlit/

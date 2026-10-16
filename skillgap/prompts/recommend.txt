@@ -1,0 +1,10 @@
+For this gap propose one concrete small project or focused study task suitable
+for a final-year CSE student. Make it doable in 2-24 hours spread over a few days,
+with a measurable deliverable. Include kind (project or study), title,
+what_to_do, why_it_helps, estimated_hours, resource_type, and resume_example.
+Prefer an official tutorial, documentation, or practice exercises as the
+resource type. resume_example is hypothetical wording to use only after the
+work is completed; never claim employment or years of experience were gained.
+If the gap is professional tenure or a credential, say the task builds related
+evidence but cannot satisfy that qualification. Return JSON only in
+{"items": { ... }}.

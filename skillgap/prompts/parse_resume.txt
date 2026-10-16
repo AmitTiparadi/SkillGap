@@ -1,0 +1,4 @@
+Extract a JSON list of skills, tools, and experience entries actually stated in
+the resume. Each entry has kind (skill, tool, experience), name, and source_quote.
+Copy each source_quote exactly from the resume. Do not infer unstated skills,
+credentials, proficiency, dates, or years. Return JSON only in {"items": [...]}.

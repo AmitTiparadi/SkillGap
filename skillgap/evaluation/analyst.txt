@@ -1,0 +1,15 @@
+Data Analyst, SteerBridge - condensed evaluation requirements
+Source: https://jobs.lever.co/steerbridge/31c8e973-ad10-4b76-8289-410cd1731089
+Reviewed: 2026-10-11. These are paraphrased requirements, not the full posting.
+
+Required: Analyze large relational datasets and identify operational trends.
+Required: Advanced SQL joins, aggregations, and query optimization.
+Required: Validate data and troubleshoot discrepancies.
+Required: Familiarity with ETL pipelines and automated data workflows.
+Required: Maintain recurring reports and dashboards.
+Required: Three years of professional data analysis experience.
+Required: Relevant bachelor's degree.
+Required: U.S. citizenship and eligibility for the required security clearance.
+Preferred: Python or R proficiency for data analysis.
+Preferred: Predictive analytics experience.
+Preferred: Experience with scheduling and automation tools.

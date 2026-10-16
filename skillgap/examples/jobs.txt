@@ -1,0 +1,12 @@
+Backend developer - illustrative student fixture (not a real posting)
+Required: Build REST APIs with Python and Flask.
+Required: Write SQL queries and design PostgreSQL databases.
+Required: Package applications with Docker.
+Preferred: Deploy applications using AWS.
+---
+Data analyst - illustrative student fixture (not a real posting)
+Required: Analyze tabular data with Python and pandas.
+Required: Write SQL queries.
+Required: Build dashboards with Power BI.
+Required: Explain statistical hypothesis tests.
+Preferred: Present data findings with clear charts.

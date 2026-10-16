@@ -1,0 +1,659 @@
+{
+  "covered": [
+    {
+      "text": "Preferred: Python or R proficiency for data analysis.",
+      "canonical_key": "python r",
+      "importance": "preferred",
+      "source_quote": "Preferred: Python or R proficiency for data analysis.",
+      "id": "0:8",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.49702755501310514,
+      "invalid_covered_citation": false,
+      "category": "covered",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "The top line indicates proficiency in Python, SQL, Git, HTML, and CSS, which are all relevant to data analysis.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.49702755501310514
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.4026329531912191
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.32875990087997936
+        }
+      ]
+    }
+  ],
+  "partial": [
+    {
+      "text": "Required: Analyze large relational datasets and identify operational trends.",
+      "canonical_key": "analyze large relational datasets and identify operational trends",
+      "importance": "required",
+      "source_quote": "Required: Analyze large relational datasets and identify operational trends.",
+      "id": "0:0",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.401130133992187,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.401130133992187
+        },
+        {
+          "line": "Created Matplotlib charts to explain monthly sales trends.",
+          "score": 0.3402836426922292
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.2727044357912871
+        }
+      ]
+    },
+    {
+      "text": "Required: Advanced SQL joins, aggregations, and query optimization.",
+      "canonical_key": "sql",
+      "importance": "required",
+      "source_quote": "Required: Advanced SQL joins, aggregations, and query optimization.",
+      "id": "0:1",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.3573400701364787,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.3573400701364787
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.27504395460771447
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.23659902666244328
+        }
+      ]
+    },
+    {
+      "text": "Required: Familiarity with ETL pipelines and automated data workflows.",
+      "canonical_key": "data pipeline",
+      "importance": "required",
+      "source_quote": "Required: Familiarity with ETL pipelines and automated data workflows.",
+      "id": "0:3",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.3262052512786996,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.3262052512786996
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.28903785738334103
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.2725170699430554
+        }
+      ]
+    },
+    {
+      "text": "Required: Maintain recurring reports and dashboards.",
+      "canonical_key": "maintain recurring reports and dashboards",
+      "importance": "required",
+      "source_quote": "Required: Maintain recurring reports and dashboards.",
+      "id": "0:4",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.3531085820922009,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Created Matplotlib charts to explain monthly sales trends.",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Created Matplotlib charts to explain monthly sales trends.",
+          "score": 0.3531085820922009
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.3145042647297548
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.24734369741880216
+        }
+      ]
+    },
+    {
+      "text": "Required: Three years of professional data analysis experience.",
+      "canonical_key": "data analysis experience | tenure: three years",
+      "importance": "required",
+      "source_quote": "Required: Three years of professional data analysis experience.",
+      "id": "0:5",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.36905638352015235,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Final-year Computer Science Engineering student",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.36905638352015235
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.3250092254540056
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.2741673466696983
+        }
+      ]
+    },
+    {
+      "text": "Required: Relevant bachelor's degree.",
+      "canonical_key": "degree",
+      "importance": "required",
+      "source_quote": "Required: Relevant bachelor's degree.",
+      "id": "0:6",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.37303110805069783,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Final-year Computer Science Engineering student",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.37303110805069783
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.2746436956909596
+        },
+        {
+          "line": "Alex Student",
+          "score": 0.22735875957373358
+        }
+      ]
+    },
+    {
+      "text": "Preferred: Predictive analytics experience.",
+      "canonical_key": "predictive analytics",
+      "importance": "preferred",
+      "source_quote": "Preferred: Predictive analytics experience.",
+      "id": "0:9",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.34466978864520986,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.34466978864520986
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.2832539065750069
+        },
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.22986019914660902
+        }
+      ]
+    },
+    {
+      "text": "Preferred: Experience with scheduling and automation tools.",
+      "canonical_key": "automation tools",
+      "importance": "preferred",
+      "source_quote": "Preferred: Experience with scheduling and automation tools.",
+      "id": "0:10",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.40159264956437757,
+      "invalid_covered_citation": false,
+      "category": "partial",
+      "citation": "Skills: Python, SQL, Git, HTML, CSS",
+      "explanation": "Related evidence met the lower threshold, but not the high threshold.",
+      "candidates": [
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.40159264956437757
+        },
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.30603441714612023
+        },
+        {
+          "line": "Built a Flask REST API for a student library with SQLite and unit tests.",
+          "score": 0.18869289198009576
+        }
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "text": "Required: Validate data and troubleshoot discrepancies.",
+      "canonical_key": "validate data and troubleshoot discrepancies",
+      "importance": "required",
+      "source_quote": "Required: Validate data and troubleshoot discrepancies.",
+      "id": "0:2",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.22286167572658874,
+      "invalid_covered_citation": false,
+      "category": "missing",
+      "citation": null,
+      "explanation": "No resume line met the lower similarity threshold.",
+      "candidates": [
+        {
+          "line": "Analyzed a public sales CSV using pandas and SQL queries.",
+          "score": 0.22286167572658874
+        },
+        {
+          "line": "Collaborated with three classmates using Git branches and pull requests.",
+          "score": 0.1732347066297734
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.15965562539428463
+        }
+      ]
+    },
+    {
+      "text": "Required: U.S. citizenship and eligibility for the required security clearance.",
+      "canonical_key": "security clearance",
+      "importance": "required",
+      "source_quote": "Required: U.S. citizenship and eligibility for the required security clearance.",
+      "id": "0:7",
+      "job_id": 9,
+      "job_index": 0,
+      "score": 0.12326311874404215,
+      "invalid_covered_citation": false,
+      "category": "missing",
+      "citation": null,
+      "explanation": "No resume line met the lower similarity threshold.",
+      "candidates": [
+        {
+          "line": "Final-year Computer Science Engineering student",
+          "score": 0.12326311874404215
+        },
+        {
+          "line": "Skills: Python, SQL, Git, HTML, CSS",
+          "score": 0.10337143726865083
+        },
+        {
+          "line": "Alex Student",
+          "score": 0.09036599479556368
+        }
+      ]
+    }
+  ],
+  "ranked_gaps": [
+    {
+      "canonical_key": "analyze large relational datasets and identify operational trends",
+      "text": "Required: Analyze large relational datasets and identify operational trends.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:0"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "data analysis experience | tenure: three years",
+      "text": "Required: Three years of professional data analysis experience.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:5"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "data pipeline",
+      "text": "Required: Familiarity with ETL pipelines and automated data workflows.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:3"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "degree",
+      "text": "Required: Relevant bachelor's degree.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:6"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "maintain recurring reports and dashboards",
+      "text": "Required: Maintain recurring reports and dashboards.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:4"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "security clearance",
+      "text": "Required: U.S. citizenship and eligibility for the required security clearance.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:7"
+      ],
+      "categories": [
+        "missing"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "sql",
+      "text": "Required: Advanced SQL joins, aggregations, and query optimization.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:1"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "validate data and troubleshoot discrepancies",
+      "text": "Required: Validate data and troubleshoot discrepancies.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [
+        0
+      ],
+      "requirement_ids": [
+        "0:2"
+      ],
+      "categories": [
+        "missing"
+      ],
+      "frequency": 1,
+      "required_count": 1,
+      "importance": "required"
+    },
+    {
+      "canonical_key": "automation tools",
+      "text": "Preferred: Experience with scheduling and automation tools.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [],
+      "requirement_ids": [
+        "0:10"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 0,
+      "importance": "preferred"
+    },
+    {
+      "canonical_key": "predictive analytics",
+      "text": "Preferred: Predictive analytics experience.",
+      "job_indices": [
+        0
+      ],
+      "required_jobs": [],
+      "requirement_ids": [
+        "0:9"
+      ],
+      "categories": [
+        "partial"
+      ],
+      "frequency": 1,
+      "required_count": 0,
+      "importance": "preferred"
+    }
+  ],
+  "recommendations": [
+    {
+      "kind": "project",
+      "title": "Identify Operational Trends in Large Relational Datasets",
+      "what_to_do": "Analyze a large relational dataset to identify operational trends and suggest improvements.",
+      "why_it_helps": "This project will help the student gain practical experience in analyzing large datasets, which is crucial for a CSE student. It will also provide insights into operational trends, which can be beneficial for improving processes and decision-making.",
+      "estimated_hours": 12,
+      "resource_type": "official tutorial",
+      "resume_example": "Identified operational trends in large relational datasets and proposed improvements that resulted in a 15% increase in efficiency.",
+      "gap_key": "analyze large relational datasets and identify operational trends",
+      "requirement_ids": [
+        "0:0"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Data Analysis Bootcamp",
+      "what_to_do": "Create a comprehensive data analysis bootcamp for a CSE student to improve their skills in data analysis.",
+      "why_it_helps": "This project will help the student gain practical experience in data analysis, which is highly valued in the CSE field. This task builds related evidence but cannot satisfy professional tenure, degree, citizenship, or clearance requirements.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "A CSE student who successfully completed a data analysis bootcamp and gained valuable skills in data analysis.",
+      "gap_key": "data analysis experience | tenure: three years",
+      "requirement_ids": [
+        "0:5"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Automating Data Integration for Improved Reporting",
+      "what_to_do": "Create a Python script that automates the process of extracting, transforming, and loading data from various sources into a central repository. This will streamline the data integration process and ensure that all data is up-to-date and easily accessible.",
+      "why_it_helps": "This project will enhance the efficiency of data management and reporting, making it easier for team members to access the latest information and reduce the risk of errors.",
+      "estimated_hours": 12,
+      "resource_type": "official tutorial",
+      "resume_example": "Automated Data Integration Script for Improved Reporting",
+      "gap_key": "data pipeline",
+      "requirement_ids": [
+        "0:3"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Building a Personal Website with React",
+      "what_to_do": "Create a personal website using React, including a portfolio section, a blog, and a contact form.",
+      "why_it_helps": "This project will help you practice React development, improve your portfolio, and enhance your resume with a functional and visually appealing website. This task builds related evidence but cannot satisfy professional tenure, degree, citizenship, or clearance requirements.",
+      "estimated_hours": 2,
+      "resource_type": "official tutorial",
+      "resume_example": "A personal website showcasing your skills and projects, including a portfolio of your work, a blog, and a contact form.",
+      "gap_key": "degree",
+      "requirement_ids": [
+        "0:6"
+      ],
+      "used_fallback": false
+    },
+    {
+      "kind": "project",
+      "title": "Automate Report Generation and Dashboard Updates",
+      "what_to_do": "Create a script or tool that automates the generation of recurring reports and updates of dashboards. This will involve setting up a pipeline that triggers report generation based on predefined conditions and updates dashboard content in real-time.",
+      "why_it_helps": "This project will help the student gain practical experience in automating tasks, which is highly valued in the tech industry. It will also improve efficiency and reduce manual errors, making the student's work more reliable and less prone to human error.",
+      "estimated_hours": 12,
+      "resource_type": "official tutorial",
+      "resume_example": "Automated Report Generation and Dashboard Updates",
+      "gap_key": "maintain recurring reports and dashboards",
+      "requirement_ids": [
+        "0:4"
+      ],
+      "used_fallback": false
+    }
+  ],
+  "warnings": [],
+  "incomplete": false,
+  "job_count": 1,
+  "retry_counters": {},
+  "resume_entries": [
+    {
+      "kind": "skill",
+      "name": "Python",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "skill",
+      "name": "SQL",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "Git",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "HTML",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "tool",
+      "name": "CSS",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Built a Flask REST API for a student library with SQLite and unit tests.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Analyzed a public sales CSV using pandas and SQL queries.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Created Matplotlib charts to explain monthly sales trends.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    },
+    {
+      "kind": "experience",
+      "name": "Collaborated with three classmates using Git branches and pull requests.",
+      "source_quote": "Skills: Python, SQL, Git, HTML, CSS"
+    }
+  ],
+  "settings": {
+    "llm_provider": "ollama",
+    "ollama_base_url": "http://localhost:11434",
+    "ollama_model": "qwen2.5:1.5b",
+    "ollama_num_gpu": 0,
+    "ollama_keep_alive": "0",
+    "ollama_batch_size": 64,
+    "api_base_url": "https://api.openai.com/v1",
+    "api_model": "",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "embedding_local_files_only": false,
+    "high_similarity": 0.49,
+    "low_similarity": 0.3,
+    "max_retries": 2,
+    "top_n_gaps": 5,
+    "match_top_k": 3,
+    "retry_top_k_increment": 3,
+    "structured_output_retries": 1,
+    "llm_timeout_seconds": 120,
+    "ollama_context_tokens": 8192,
+    "max_output_tokens": 2048,
+    "max_extracted_entries": 50,
+    "embedding_timeout_seconds": 240,
+    "max_resume_bytes": 5000000,
+    "max_resume_characters": 30000,
+    "max_job_characters": 20000,
+    "max_jobs": 10,
+    "parser_version": "1",
+    "prompt_version": "4",
+    "db_path": "data/skillgap.sqlite3"
+  }
+}
