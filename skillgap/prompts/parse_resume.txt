@@ -1,4 +1,7 @@
-Extract a JSON list of skills, tools, and experience entries actually stated in
-the resume. Each entry has kind (skill, tool, experience), name, and source_quote.
-Copy each source_quote exactly from the resume. Do not infer unstated skills,
-credentials, proficiency, dates, or years. Return JSON only in {"items": [...]}.
+Extract skills, tools and experience from these numbered resume lines.
+Return {"items": [{"kind": "skill", "name": "Python", "line_id": 3}]}.
+Use only line_id values supplied in this request. Copy each name as a short
+phrase from that same line. Do not rewrite names or generate source_quote.
+Ignore contact details and section headings. Do not infer skills, credentials,
+proficiency or years. Return no more than maximum_entries items; [] is allowed
+when no skill, tool or experience is stated. Return JSON only.

@@ -26,6 +26,13 @@ class ResumeEntry(StrictModel):
     source_quote: str = Field(min_length=1)
 
 
+class ResumeFact(StrictModel):
+    """The model selects a source line; Python constructs the exact citation."""
+    kind: Literal["skill", "tool", "experience"]
+    name: str = Field(min_length=1, max_length=100)
+    line_id: int = Field(ge=0)
+
+
 class JobRequirement(StrictModel):
     text: str = Field(min_length=1)
     canonical_key: str = Field(min_length=1)
@@ -53,6 +60,15 @@ class Recommendation(StrictModel):
 class JSONResult:
     value: Any
     used_fallback: bool = False
+    failure_reason: str | None = None
+
+
+class PromptBudgetError(ValueError):
+    pass
+
+
+class OutputLimitError(ValueError):
+    pass
 
 
 def prompt(name: str, payload: dict) -> str:
@@ -76,9 +92,11 @@ class LLMClient:
             # UTF-8 bytes are a conservative upper bound for byte-level tokens.
             # Reserve output space rather than allowing Ollama to silently drop
             # early resume content when a prompt exceeds the context window.
-            byte_budget = len(json.dumps(messages, ensure_ascii=False).encode("utf-8")) + len(json.dumps(schema).encode("utf-8"))
+            # The schema is already in the user message. Ollama's format field
+            # constrains decoding; it is not another copy of prompt tokens.
+            byte_budget = sum(len(item["content"].encode("utf-8")) for item in messages) + 128
             if byte_budget > self.settings.ollama_context_tokens - self.settings.max_output_tokens:
-                raise ValueError("Structured prompt exceeds the local model context budget")
+                raise PromptBudgetError("Structured prompt exceeds the local model context budget")
         # Disable environment proxies and redirects: local mode stays on loopback.
         with httpx.Client(timeout=self.settings.llm_timeout_seconds,
                           trust_env=False, follow_redirects=False,
@@ -102,7 +120,10 @@ class LLMClient:
                                 "num_predict": self.settings.max_output_tokens},
                 })
                 response.raise_for_status()
-                return response.json()["message"]["content"]
+                data = response.json()
+                if data.get("done_reason") == "length":
+                    raise OutputLimitError("Structured response exceeded its output budget")
+                return data["message"]["content"]
             response = client.post(self.settings.api_base_url.rstrip("/") + "/chat/completions",
                                    headers={"Authorization": "Bearer " + self.settings.api_key},
                                    json={"model": self.settings.api_model, "messages": messages,
@@ -113,7 +134,8 @@ class LLMClient:
             return response.json()["choices"][0]["message"]["content"]
 
     def structured(self, message: str, schema_type: Any, fallback: Any,
-                   validator: Callable[[Any], Any] | None = None) -> JSONResult:
+                   validator: Callable[[Any], Any] | None = None,
+                   *, max_items: int | None = None) -> JSONResult:
         """Retry invalid JSON or schema once, then return a visible safe fallback.
 
         Wrap every output in {"items": ...} so list results also work with API
@@ -123,7 +145,7 @@ class LLMClient:
         adapter = TypeAdapter(schema_type)
         item_schema = adapter.json_schema()
         if item_schema.get("type") == "array":
-            item_schema["maxItems"] = self.settings.max_extracted_entries
+            item_schema["maxItems"] = max_items or self.settings.max_extracted_entries
         definitions = item_schema.pop("$defs", None)
         schema = {"type": "object", "properties": {"items": item_schema},
                   "required": ["items"], "additionalProperties": False}
@@ -131,17 +153,26 @@ class LLMClient:
         # break schema-constrained decoding in Ollama.
         if definitions:
             schema["$defs"] = definitions
+        failure_reason = None
         for attempt in range(self.settings.structured_output_retries + 1):
             try:
-                stricter = "\nSTRICT: The previous response failed validation. Output only one JSON object with an items field; no markdown or extra fields. Match every schema field and type. Copy source_quote verbatim from input; never paraphrase quotes." if attempt else ""
+                stricter = "\nSTRICT: The previous response failed validation. Output only one JSON object with an items field; no markdown or extra fields. Match every schema field and type. Use only source identifiers supplied in the input. Copy requested evidence text verbatim; never paraphrase quotes." if attempt else ""
                 result = json.loads(self._request(message + stricter, schema))
                 if not isinstance(result, dict) or set(result) != {"items"}:
                     raise ValueError("Expected only the items field")
                 value = adapter.validate_python(result["items"])
+                if isinstance(value, list) and len(value) > schema["properties"]["items"]["maxItems"]:
+                    raise ValueError("Too many extracted entries")
                 if validator is not None:
                     value = validator(value)
                 return JSONResult(value)
             except Exception as error:
+                failure_reason = ("context_limit" if isinstance(error, PromptBudgetError) else
+                                  "output_limit" if isinstance(error, OutputLimitError) else
+                                  "timeout" if isinstance(error, httpx.TimeoutException) else
+                                  "model_unavailable" if isinstance(error, httpx.ConnectError) else
+                                  "invalid_json" if isinstance(error, json.JSONDecodeError) else
+                                  "validation_failed")
                 LOGGER.warning("Structured LLM call failed (%s), attempt %d", type(error).__name__, attempt + 1)
         LOGGER.error("Structured LLM call exhausted retries; safe fallback used")
-        return JSONResult(fallback, used_fallback=True)
+        return JSONResult(fallback, used_fallback=True, failure_reason=failure_reason)

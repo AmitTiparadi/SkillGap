@@ -44,7 +44,7 @@ $('analyze').onclick = async () => {
   const body = new FormData(); body.append('resume', selectedFile); body.append('jobs', $('jobs').value);
   body.append('provider', $('provider').value); body.append('model', $('model').value);
   body.append('api_model', $('api-model').value); body.append('api_key', $('api-key').value); body.append('api_consent', $('api-consent').checked);
-  try { const response = await fetch('/api/analyze', {method:'POST', body}); const data = await response.json(); if (!response.ok) throw Error(typeof data.detail === 'string' ? data.detail : 'Check the upload and model settings.'); report = data; render(); $('status').textContent = 'Analysis ready. Follow the evidence.'; }
+  try { const response = await fetch('/api/analyze', {method:'POST', body}); const data = await response.json(); if (!response.ok) throw Error(typeof data.detail === 'string' ? data.detail : 'Check the upload and model settings.'); report = data; render(); $('status').textContent = data.incomplete ? 'Analysis needs review. See the details below.' : 'Analysis ready. Follow the evidence.'; }
   catch (error) { fail(error.message || 'Could not reach the local server.'); $('empty-state').hidden = false; $('status').textContent = 'Analysis stopped. Review the message below.'; }
   finally { busy = false; inputs.forEach(id => $(id).disabled = false); $('analyze').textContent = 'Find my skill gaps ↗'; update(); }
 };
@@ -61,7 +61,7 @@ function renderEvidence() {
 }
 function render() {
   $('results').hidden = false; $('empty-state').hidden = true; $('warnings').replaceChildren();
-  if (report.incomplete) $('warnings').append(el('div', 'Incomplete analysis. Review the warnings before relying on these results.', 'warning'));
+  if (report.incomplete) $('warnings').append(el('div', 'Some analysis steps could not be completed. Review the details below; the available results are provisional.', 'warning'));
   report.warnings.forEach(w => $('warnings').append(el('div', w, 'warning')));
   $('job-filter').replaceChildren(new Option('All roles','all')); for (let i = 0; i < report.job_count; i++) $('job-filter').add(new Option(`Role ${i + 1}`, String(i))); renderEvidence();
   $('gap-list').replaceChildren(); report.ranked_gaps.forEach((gap, i) => { const row = el('div', null, 'gap-row'), content = el('div'); content.append(el('h3', gap.text), el('p', `${gap.frequency} role${gap.frequency === 1 ? '' : 's'} · ${gap.importance}`)); row.append(el('span', String(i + 1).padStart(2,'0'), 'gap-number'), content); $('gap-list').append(row); });

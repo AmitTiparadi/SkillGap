@@ -43,13 +43,15 @@ class Settings:
     ollama_context_tokens: int = 8192
     max_output_tokens: int = 2048
     max_extracted_entries: int = 50
+    resume_chunk_bytes: int = 1600
+    resume_entries_per_chunk: int = 8
     embedding_timeout_seconds: int = 240
     max_resume_bytes: int = 5_000_000
     max_resume_characters: int = 30_000
     max_job_characters: int = 20_000
     max_jobs: int = 10
     parser_version: str = "1"
-    prompt_version: str = "4"
+    prompt_version: str = "5"
     db_path: Path = PROJECT_ROOT / "data" / "skillgap.sqlite3"
 
     def __post_init__(self) -> None:
@@ -59,6 +61,8 @@ class Settings:
             raise ValueError("Require 0 <= low_similarity < high_similarity <= 1")
         if self.max_retries < 0 or self.structured_output_retries < 0:
             raise ValueError("Retry limits must be nonnegative")
+        if self.resume_chunk_bytes < 256 or self.resume_entries_per_chunk < 1:
+            raise ValueError("Resume chunks require at least 256 bytes and one entry")
         if min(self.top_n_gaps, self.match_top_k, self.retry_top_k_increment,
                self.llm_timeout_seconds, self.ollama_batch_size,
                self.embedding_timeout_seconds, self.max_output_tokens,

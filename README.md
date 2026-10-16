@@ -119,6 +119,16 @@ requirements, candidates, grades, retry counters, rankings, and reports. Service
 objects are injected into nodes rather than serialized into state. This makes
 the workflow testable with mocked LLMs and controlled embedding vectors.
 
+Resume extraction uses small numbered sections (`resume_chunk_bytes`, default
+1600 serialized UTF-8 bytes) rather than sending the whole document twice.
+Each model response selects at most eight facts using source line IDs. Python
+checks that each name occurs in its supplied line and constructs the exact
+citation from the original resume. All original lines still participate in
+matching, including long paragraphs that span extraction requests. Successful
+sections are retained if another fails, but partial extractions are marked
+incomplete and never reused as a successful parse cache. Changing the chunk
+policy or prompt invalidates the relevant cache automatically.
+
 Embeddings run in a short-lived local worker, with all cache misses batched per
 match node. This releases PyTorch memory before grading. Text travels over local
 process pipes; there is no separate server or external embedding API. Ollama

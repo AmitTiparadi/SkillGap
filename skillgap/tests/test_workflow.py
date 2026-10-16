@@ -9,7 +9,7 @@ from skillgap.config import PROJECT_ROOT, Settings
 from skillgap.db import Database
 from skillgap.graph.nodes import Nodes
 from skillgap.graph.workflow import analyze
-from skillgap.llm import JSONResult, JobRequirement, Recommendation, ResumeEntry, SupportDecision
+from skillgap.llm import JSONResult, JobRequirement, Recommendation, ResumeFact, SupportDecision
 
 
 class WorkflowTests(unittest.TestCase):
@@ -32,10 +32,10 @@ class WorkflowTests(unittest.TestCase):
         database.initialize()
         llm = Mock()
         line = "Built Python APIs"
-        def respond(message, schema, fallback, validator=None):
+        def respond(message, schema, fallback, validator=None, **kwargs):
             self.assertFalse(get_tracing_context()["enabled"])
-            if schema == list[ResumeEntry]:
-                value = [ResumeEntry(kind="experience", name="Python", source_quote=line)]
+            if schema == list[ResumeFact]:
+                value = [ResumeFact(kind="experience", name="Python", line_id=0)]
             elif schema == list[JobRequirement]:
                 value = [JobRequirement(text=key, canonical_key=key.lower(), importance="required", source_quote=key)
                          for key in ["Python", "Docker"]]

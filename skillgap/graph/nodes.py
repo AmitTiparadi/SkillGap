@@ -8,8 +8,9 @@ from skillgap.config import Settings
 from skillgap.db import Database, cache_key, input_hash
 from skillgap.embeddings import EmbeddingService
 from skillgap.graph.state import SkillGapState
-from skillgap.llm import JobRequirement, LLMClient, Recommendation, ResumeEntry, SupportDecision, prompt
+from skillgap.llm import JobRequirement, LLMClient, Recommendation, SupportDecision, prompt
 from skillgap.parsers import DocumentError, extract_text, resume_lines
+from skillgap.resume_extraction import extract_resume_entries
 
 
 def canonicalize(value: str) -> str:
@@ -134,6 +135,8 @@ class Nodes:
                     "parser": settings.parser_version, "prompt": settings.prompt_version,
                     "context_tokens": settings.ollama_context_tokens}
         resume_key = cache_key({**metadata, "template": input_hash(prompt("parse_resume", {})),
+                                "chunk_bytes": settings.resume_chunk_bytes,
+                                "entries_per_chunk": settings.resume_entries_per_chunk,
                                 "format": state["resume_filename"].rsplit(".", 1)[-1].lower()})
         digest = input_hash(data)
         cached = self.db.get_parse("resume", digest, resume_key)
@@ -145,12 +148,12 @@ class Nodes:
             text = extract_text(data, state["resume_filename"])
             if len(text) > settings.max_resume_characters:
                 raise DocumentError("Resume text exceeds the configured context limit. Upload a shorter version.")
-            result = self.llm.structured(prompt("parse_resume", {"resume": text, "exact_lines": resume_lines(text)}), list[ResumeEntry], [],
-                                         lambda items: cited_entries(items, text))
-            entries = [item.model_dump() for item in result.value]
+            result = extract_resume_entries(text, self.llm, settings)
+            entries = result.entries
             resume_id = None
-            if result.used_fallback:
-                warnings.append("Resume extraction failed; grades use raw resume lines. This report is incomplete.")
+            if result.failed_chunks:
+                reasons = ", ".join(reason.replace("_", " ") for reason in result.reasons)
+                warnings.append(f"Resume skill summary: {result.failed_chunks} of {result.total_chunks} sections could not be structured ({reasons}). Requirement matches still use your original resume lines. Retry analysis to complete the summary.")
                 incomplete = True
             else:
                 resume_id = self.db.save_resume(digest, resume_key, state["resume_filename"], text, entries)

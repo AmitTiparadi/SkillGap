@@ -9,7 +9,7 @@ import httpx
 from skillgap.config import PROJECT_ROOT, Settings
 from skillgap.db import Database
 from skillgap.graph.nodes import Nodes
-from skillgap.llm import JSONResult, JobRequirement, LLMClient, ResumeEntry, SupportDecision
+from skillgap.llm import JSONResult, JobRequirement, LLMClient, ResumeEntry, ResumeFact, SupportDecision
 
 
 class LLMTests(unittest.TestCase):
@@ -63,7 +63,7 @@ class LLMTests(unittest.TestCase):
         database.initialize()
         llm = Mock()
         llm.structured.side_effect = [
-            JSONResult([ResumeEntry(kind="experience", name="Python", source_quote="Built Python APIs")]),
+            JSONResult([ResumeFact(kind="experience", name="Python", line_id=0)]),
             JSONResult([JobRequirement(text="Python", canonical_key="python", importance="required", source_quote="Python")]),
         ]
         nodes = Nodes(Settings(), database, llm, Mock())
