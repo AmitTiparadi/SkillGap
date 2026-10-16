@@ -42,6 +42,18 @@ If an older checkout fails with a Transformers dependency conflict, run
 `git pull`, then repeat the install command above. Do not use `--no-deps` to
 bypass the resolver; that can leave incompatible packages installed.
 
+If pip stops with `MemoryError` while unpacking a wheel, close other
+memory-heavy applications and retry without caching or bytecode compilation:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install --no-cache-dir --no-compile -e ".[dev]" -c constraints-tested.txt
+.\.venv\Scripts\python.exe -m pip check
+```
+
+This resumes dependency installation in the existing environment. If Windows
+also reports insufficient paging resources, restart before retrying. Check
+that installation finishes successfully before starting SkillGap.
+
 ## Models and configuration
 
 All policy settings live in `skillgap/config.py`. Defaults use local
