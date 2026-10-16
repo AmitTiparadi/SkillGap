@@ -1,4 +1,4 @@
-# Core versions used for the verified Windows/Python 3.13 build.
+# Core versions for Windows/Python 3.13. Validate together with pip's resolver.
 # Optional: pip install -e ".[dev]" -c constraints-tested.txt
 langgraph==1.1.2
 fastapi==0.135.1
@@ -11,7 +11,8 @@ pydantic==2.12.5
 numpy==2.2.6
 scipy==1.15.3
 torch==2.11.0
-transformers==5.6.2
+# sentence-transformers 5.1.2 requires transformers >=4.41 and <5.
+transformers>=4.41,<5
 reportlab==4.4.3
 filelock==4.1.0
 langsmith==0.7.17

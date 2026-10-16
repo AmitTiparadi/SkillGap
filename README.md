@@ -29,13 +29,18 @@ Alternatively, click **Try a sample analysis** to try the included roles.
 The report shows covered, partial, and missing requirements, exact citations,
 retrieved candidates, ranked gaps, and recommendations. Download it as JSON.
 
-`constraints-tested.txt` pins the core versions used for the verified Windows
-build. If another OS/Python version has no wheel for a pinned version, install
+`constraints-tested.txt` constrains the core dependencies for the Windows
+build. Sentence Transformers 5.1.2 requires Transformers 4.x, so the file keeps
+Transformers below 5. If another OS/Python version has no wheel for a pinned version, install
 without `-c constraints-tested.txt`; the dependency ranges remain in `pyproject.toml`.
 Initial model downloads need a network connection; downloaded weights and all
 inference stay local. `prepare_models` is optional: it downloads only the pinned
 MiniLM snapshot with no resume content. The normal embedding loader can also
 download it automatically.
+
+If an older checkout fails with a Transformers dependency conflict, run
+`git pull`, then repeat the install command above. Do not use `--no-deps` to
+bypass the resolver; that can leave incompatible packages installed.
 
 ## Models and configuration
 
